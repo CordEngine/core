@@ -1,0 +1,35 @@
+{
+  "name": "@cordengine/core",
+  "version": "0.0.0",
+  "description": "Imagine a wondrous machine where ideas and code mesh like perfectly aligned gears, transforming into powerful Discord bots with a hiss of steam.",
+  "author": "Brian Lister <brian@sparkforge.dev (http://sparkforge.dev/)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier . --write --log-level warn; xo; markdownlint-cli2 '**/*.md' '#node_modules'; tsc --noEmit --skipLibCheck"
+  },
+  "engines": {
+    "bun": "^1.1.32"
+  },
+  "dependencies": {
+    "@hypercliq/shutdown-cleanup": "^6.0.4",
+    "@sparkbot/plugin-logger": "^0.4.1",
+    "@sparkbot/plugin-secrets": "^0.1.1",
+    "cron": "^3.1.7",
+    "discord.js": "^14.16.3",
+    "luxon": "^3.5.0",
+    "valibot": "^0.42.1"
+  },
+  "peerDependencies": {
+    "bun": "^1.1.33",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@cordengine/common-configs": "link:@cordengine/common-configs",
+    "@types/bun": "^1.1.12",
+    "eslint": "^9.13.0",
+    "markdownlint-cli2": "^0.14.0",
+    "prettier": "^3.3.3",
+    "type-coverage": "^2.29.7"
+  }
+}
