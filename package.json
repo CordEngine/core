@@ -1,12 +1,12 @@
 {
-	"name": "@cordengine/project-template",
-	"version": "0.0.1",
-	"description": "Starting template for Cord Engine projects",
+	"name": "@cordengine/core",
+	"version": "0.0.0",
+	"description": "Imagine a wondrous machine where ideas and code mesh like perfectly aligned gears, transforming into powerful Discord bots with a hiss of steam.",
 	"author": "Brian Lister <brian@sparkforge.dev> (http://sparkforge.dev/)",
 	"contributors": [],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/CordEngine/project-template.git"
+		"url": "https://github.com/CordEngine/core.git"
 	},
 	"license": "MIT",
 	"type": "module",
@@ -22,15 +22,19 @@
 		"lint:markdown": "markdownlint-cli2 '**/*.md'",
 		"lint:tsc": "tsc --noEmit --skipLibCheck"
 	},
-	"peerDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"markdownlint-cli2": "0.15.0"
+	"dependencies": {
+		"@hypercliq/shutdown-cleanup": "^6.0.4",
+		"cron": "^3.2.1",
+		"discord.js": "^14.16.3",
+		"luxon": "^3.5.0",
+		"valibot": "^1.0.0-beta.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@cordengine/shared-configs": "^0.0.2",
 		"@types/bun": "^1.1.13",
 		"markdownlint-cli2": "0.15.0",
+		"type-coverage": "^2.29.7",
 		"typescript": "^5.6.3"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
